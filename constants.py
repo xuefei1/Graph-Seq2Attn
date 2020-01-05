@@ -1,0 +1,70 @@
+# one identifier for one types of dict
+# for instance, DK_SOME_KEY means this is a key for a data_dict
+DK_BATCH_SIZE = "batch_size"
+DK_PAD = "pad" # DK: general purpose data_dict
+DK_SRC_WID = "src_wid" # src = msg + ctx
+DK_SRC_WID_MASK = "src_wid_mask"
+DK_SRC_SEQ_MASK = "src_seq_mask"
+DK_MSG_WID = "msg_wid" # msg is usually shorter than ctx
+DK_MSG_WID_MASK = "msg_wid_mask"
+DK_CTX_WID = "ctx_wid" # msg is usually shorter than ctx
+DK_CTX_WID_MASK = "ctx_wid_mask"
+DK_SRC_POS = "src_pos"
+DK_SRC_NER = "src_ner"
+DK_SRC_SEG_LISTS = "src_seg_lists"
+DK_TGT_GEN_WID = "tgt_gen_wid"
+DK_TGT_CPY_WID = "tgt_cpy_wid"
+DK_TGT_CPY_GATE = "tgt_cpy_gate"
+DK_TGT_N_TOKEN = "tgt_n_token"
+DK_TGT_SEG_LISTS = "tgt_seg_lists"
+DK_SRC_IOB = "src_iob" # iob: SQuAD QG specific
+DK_DOC_WID = "doc_wid"
+DK_DOC_SEG_LISTS = "doc_seg_lists"
+DK_DOC_WID_MASK = "doc_wid_mask"
+DK_DOC_SENTS_WID = "doc_sents_wid"
+DK_DOC_SENTS_WID_MASK = "doc_sents_wid_mask"
+DK_TITLE_WID = "title_wid"
+DK_TQ_SEG_LISTS = "title_seg_lists"
+DK_TITLE_WID_MASK = "title_wid_mask"
+DK_CONCEPT_SEG_LISTS = "concept_seg_lists"
+DK_TGT_CONCEPT_GEN_WID = "tgt_concept_gen_wid" # concept gen specific
+DK_TGT_CONCEPT_CPY_WID = "tgt_concept_cpy_wid"
+DK_TGT_CONCEPT_CPY_GATE = "tgt_concept_cpy_gate"
+DK_TGT_CONCEPT_N_TOKEN = "tgt_concept_n_token"
+DK_TGT_TITLE_GEN_WID = "tgt_title_gen_wid" # title gen specific
+DK_TGT_TITLE_CPY_WID = "tgt_title_cpy_wid"
+DK_TGT_TITLE_CPY_GATE = "tgt_title_cpy_gate"
+DK_TGT_TITLE_N_TOKEN = "tgt_title_n_token"
+DK_SENT_DEPEND_GRAPH_LIST = "sent_depend_graph_list"
+DK_DOC_KW_DIST_GRAPH = "doc_kw_dist_graph"
+DK_DOC_SENT_MEAN_TFIDF_SIM_GRAPH = "doc_sent_mean_tfidf_sim_graph"
+DK_DOC_SENT_PAIR_TFIDF_SIM_GRAPH = "doc_sent_pair_tfidf_sim_graph"
+DK_DOC_SENT_WORD_OVERLAP_GRAPH = "doc_sent_word_overlap_graph"
+DK_G2S_WID_GRAPH = "graph2seq_wid_graph"
+
+SQGK_SRC_W_LIST = "src_word_list" # SQGK: SQuAD data reader keys
+SQGK_SRC_IOB_LIST = "src_iob_list"
+SQGK_SRC_POS_LIST = "src_pos_list"
+SQGK_SRC_NER_LIST = "src_ner_list"
+SQGK_TGT_W_LIST = "tgt_word_list"
+SQGK_DATA_LIST = "data_list"
+SQGK_IOB_T2I = "iob_t2i"
+SQGK_POS_T2I = "pos_t2i"
+SQGK_NER_T2I = "ner_t2i"
+
+CHKPT_COMPLETED_EPOCHS = "completed_epochs" # CHKPT: checkpoint dict keys
+CHKPT_MODEL = "model"
+CHKPT_OPTIMIZER = "optimizer"
+CHKPT_METADATA = "metadata"
+CHKPT_PARAMS = "params"
+CHKPT_BEST_EVAL_RESULT = "best_eval_result"
+CHKPT_BEST_EVAL_EPOCH = "best_eval_epoch"
+CHKPT_PAST_EVAL_RESULTS = "past_eval_results"
+
+GK_EDGE_WEIGHT = "edge_weight" # GK: graph keys
+GK_EDGE_WORD_PAIR = "edge_word_pair"
+GK_EDGE_GV_IDX_PAIR = "edge_v_idx_pair"
+GK_EDGE_TYPE = "edge_type"
+GK_EDGE_DIR = "edge_directed"
+GK_EDGE_UNDIR = "edge_undirected"
+GK_SENT_DEP = "sentence_depends"

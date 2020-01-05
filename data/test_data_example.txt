@@ -1,0 +1,1 @@
+target query|document content with segmented words . With sentence delimiter specified|document segmented keywords
