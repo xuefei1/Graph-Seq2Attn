@@ -1,6 +1,6 @@
 
 
-def read_doc_data(fn, col_delim="/", word_delim=" ", sent_delim="。", w2c_doc_limit=None, w2c_target_limit=None):
+def read_doc_data(fn, col_delim="|", word_delim=" ", sent_delim=".", w2c_doc_limit=None, w2c_target_limit=None):
     with open(fn, "r", encoding="utf-8") as f:
         lines = f.readlines()
     rv = []

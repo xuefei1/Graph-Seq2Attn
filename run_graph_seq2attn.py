@@ -13,7 +13,7 @@ def main(params):
     params.model_name = "graph_seq2attn"
     mutil.DEVICE_STR_OVERRIDE = params.device_str
 
-    data_train, w2c_query, w2c_doc = read_doc_data("data/train_data_example.txt",
+    data_train, w2c_doc, w2c_query = read_doc_data("data/train_data_example.txt",
                                                    w2c_doc_limit=params.src_vocab_w2c_limit,
                                                    w2c_target_limit=params.tgt_vocab_w2c_limit)
     data_dev, _, _ = read_doc_data("data/dev_data_example.txt")
